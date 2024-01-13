@@ -24,6 +24,8 @@ You can check out [the RainbowKit GitHub repository](https://github.com/rainbow-
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This site currently deploys `main` to a vercel app I own that is hosted for https://terraformsantenna.info
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Environmental Variables
+
+You will need a `NEXT_PUBLIC_ALCHEMY_URI` URL with an RPC url from ALCHEMY or whomever you choose to have this app run.
