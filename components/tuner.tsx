@@ -206,6 +206,9 @@ const Tuner = () => {
                 <h1 className="text-center sm:font-light text-2xl sm:text-3xl md:text-4xl text-primary-md mt-6">
                   TERRAFORMS ANTENNA INFO
                 </h1>
+                <p className="text-center sm:text-md text-beta-md mt-3 leading-relaxed">
+                      This is a page meant to help people navigate how to get antenna mode onto their Terraform parcel. For more information about Terraforms and mathcastles, please join the <a href='https://discord.com/invite/mathcastles' target='_blank'>discord</a> or follow them on <a href='https://twitter.com/mathcastles' target='_blank'>Twitter</a>.
+                    </p>
                 {true && (
                   <div className="">
                     <div className="Tuner my-10">
