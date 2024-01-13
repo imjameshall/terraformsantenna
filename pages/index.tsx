@@ -13,6 +13,7 @@ const Home: NextPage = () => {
 
       <main>
         <Tuner/>
+        <p className="text-center text-beta-md my-3 leading-relaxed">Want to help on the site? The code can be found here: <a href='https://github.com/imjameshall/terraformsantenna'>https://github.com/imjameshall/terraformsantenna</a></p>
       </main>
     </div>
   );

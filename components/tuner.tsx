@@ -58,7 +58,6 @@ const Tuner = () => {
 
   const { data: walletClient, isError, isLoading } = useWalletClient()
 
-  console.log("ALCHEMY", ALCHEMY)
   const client = createPublicClient({
     chain,
     transport: http(ALCHEMY),
@@ -68,7 +67,6 @@ const Tuner = () => {
     ;(async () => {
       if (upgradeHash) {
         const receipt = await client.waitForTransactionReceipt({hash: upgradeHash})
-        console.log(receipt)
         setUpgradeParcelText(`Complete: Check the transaction details <a href='https://etherscan.io/tx/${receipt.transactionHash}'>here</a>.`)
       }
     })()
@@ -78,7 +76,6 @@ const Tuner = () => {
     ;(async () => {
       if (antennaOnHash) {
         const receipt = await client.waitForTransactionReceipt({hash: antennaOnHash})
-        console.log(receipt)
         setTurnAntennaOnText(`Complete: Check the transaction details <a href='https://etherscan.io/tx/${receipt.transactionHash}'>here</a>.`)
       }
     })()
@@ -88,7 +85,6 @@ const Tuner = () => {
   ;(async () => {
     if (antennaOffHash) {
       const receipt = await client.waitForTransactionReceipt({hash: antennaOffHash})
-      console.log(receipt)
       setTurnAntennaOffText(`Complete: Check the transaction details <a href='https://etherscan.io/tx/${receipt.transactionHash}'>here</a>.`)
     }
   })()
@@ -99,7 +95,6 @@ useEffect(() => {
   ;(async () => {
     if (dayDreamHash) {
       const receipt = await client.waitForTransactionReceipt({hash: dayDreamHash})
-      console.log(receipt)
       setEnteringDayDreamText(`Complete: Check the transaction details <a href='https://etherscan.io/tx/${receipt.transactionHash}'>here</a>.`)
     }
   })()
